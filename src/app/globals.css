@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 :root {
-  /* Sergeant Painters Theme - Dark Green & Gold */
-  --primary-dark: #094026;
-  --primary-mid: #0a5530;
-  --accent-primary: #FCB215;
-  --accent-highlight: #FCB215;
+  /* Bison Property Management Theme - Dark Brown/Black & Orange */
+  --primary-dark: #110a0c;
+  --primary-mid: #1a1315;
+  --accent-primary: #f04d22;
+  --accent-highlight: #f04d22;
   --text-light: #ffffff;
   --text-muted: #a0a0a0;
   --bg-light: #f8f9fa;
@@ -37,7 +37,7 @@ html {
 
 body {
   font-family: 'Montserrat', system-ui, sans-serif;
-  color: #094026;
+  color: #110a0c;
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,7 +56,7 @@ body {
 
 /* Touch highlight color */
 * {
-  -webkit-tap-highlight-color: rgba(252, 178, 21, 0.2);
+  -webkit-tap-highlight-color: rgba(240, 77, 34, 0.2);
 }
 
 /* Custom scrollbar */
@@ -65,34 +65,34 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #094026;
+  background: #110a0c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FCB215;
+  background: #f04d22;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e5a013;
+  background: #d63d15;
 }
 
 @layer components {
   /* Mobile-first button styles with proper touch targets (min 44px) */
   .btn-primary {
-    @apply bg-[#FCB215] hover:bg-[#e5a013] active:bg-[#d4940f] text-[#094026] font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm shadow-lg shadow-[#FCB215]/25 hover:shadow-xl hover:shadow-[#FCB215]/30 min-h-[48px] touch-manipulation;
+    @apply bg-[#f04d22] hover:bg-[#d63d15] active:bg-[#b32f0f] text-white font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm shadow-lg shadow-[#f04d22]/25 hover:shadow-xl hover:shadow-[#f04d22]/30 min-h-[48px] touch-manipulation;
   }
 
   .btn-secondary {
-    @apply bg-[#094026] hover:bg-[#0a5530] active:bg-[#063d22] text-white font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm shadow-lg hover:shadow-xl min-h-[48px] touch-manipulation;
+    @apply bg-[#110a0c] hover:bg-[#1a1315] active:bg-[#0a0608] text-white font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm shadow-lg hover:shadow-xl min-h-[48px] touch-manipulation;
   }
 
   .btn-outline {
-    @apply border-2 border-[#FCB215] text-[#FCB215] hover:bg-[#FCB215] hover:text-[#094026] active:bg-[#e5a013] font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm min-h-[48px] touch-manipulation;
+    @apply border-2 border-[#f04d22] text-[#f04d22] hover:bg-[#f04d22] hover:text-white active:bg-[#d63d15] font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm min-h-[48px] touch-manipulation;
   }
 
   .btn-outline-white {
-    @apply border-2 border-white text-white hover:bg-white hover:text-[#094026] active:bg-gray-100 font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm min-h-[48px] touch-manipulation;
+    @apply border-2 border-white text-white hover:bg-white hover:text-[#110a0c] active:bg-gray-100 font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl transition-all duration-200 inline-flex items-center justify-center uppercase tracking-wider text-sm min-h-[48px] touch-manipulation;
   }
 
   /* Responsive section padding - reduced on mobile for more content visibility */
@@ -105,7 +105,7 @@ body {
   }
 
   .section-dark {
-    @apply bg-[#094026] text-white;
+    @apply bg-[#110a0c] text-white;
   }
 
   .section-light {
@@ -113,7 +113,7 @@ body {
   }
 
   .accent-text {
-    @apply text-[#FCB215];
+    @apply text-[#f04d22];
   }
 
   /* Reduced hover effects on mobile for better performance */
@@ -128,12 +128,12 @@ body {
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-[#FCB215] to-[#094026] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#f04d22] to-[#110a0c] bg-clip-text text-transparent;
   }
 
   /* Mobile-friendly form inputs */
   .form-input {
-    @apply w-full px-4 py-3.5 bg-[#f8f9fa] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#FCB215]/20 focus:border-[#FCB215] outline-none transition-colors text-base min-h-[48px];
+    @apply w-full px-4 py-3.5 bg-[#f8f9fa] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#f04d22]/20 focus:border-[#f04d22] outline-none transition-colors text-base min-h-[48px];
   }
 
   /* Touch-friendly link areas */
@@ -150,8 +150,8 @@ body {
 
 /* Selection color */
 ::selection {
-  background: #FCB215;
-  color: #094026;
+  background: #f04d22;
+  color: #ffffff;
 }
 
 /* Stat counter animation placeholder */
@@ -198,7 +198,7 @@ body {
 
 /* Focus visible for accessibility */
 :focus-visible {
-  outline: 2px solid #FCB215;
+  outline: 2px solid #f04d22;
   outline-offset: 2px;
 }
 

@@ -9,21 +9,21 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#094026",
+  themeColor: "#110a0c",
   colorScheme: "light",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourcompany.com"),
+  metadataBase: new URL("https://bisonpropertymanagement.ca"),
   title: {
-    default: "Company Name | Professional Contracting Services",
-    template: "%s | Company Name",
+    default: "Bison Property Management | Property Management & Landscaping Services",
+    template: "%s | Bison Property Management",
   },
-  description: "Your trusted local contractor. Professional residential & commercial services, repairs, renovations. Free estimates. Call (555) 123-4567.",
-  keywords: ["contractor", "home improvement", "renovation", "construction", "repairs", "maintenance", "residential", "commercial"],
-  authors: [{ name: "Company Name" }],
-  creator: "Company Name",
-  publisher: "Company Name",
+  description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services in Lyn, Ontario near Brockville. Call 343-700-0770 for a free quote.",
+  keywords: ["property management", "lawn care", "landscaping", "snow removal", "rental services", "Lyn", "Brockville", "Ontario", "lawn mowing", "tree trimming", "plowing"],
+  authors: [{ name: "Bison Property Management" }],
+  creator: "Bison Property Management",
+  publisher: "Bison Property Management",
   formatDetection: {
     email: false,
     address: false,
@@ -31,24 +31,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://yourcompany.com",
-    siteName: "Company Name",
-    title: "Company Name | Professional Contracting Services",
-    description: "Professional contracting services for residential and commercial properties. 15+ years experience, 500+ projects completed. Free estimates available.",
+    locale: "en_CA",
+    url: "https://bisonpropertymanagement.ca",
+    siteName: "Bison Property Management",
+    title: "Bison Property Management | Property Management & Landscaping Services",
+    description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services in Lyn, Ontario. Free quotes available.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Company Name - Professional Contractors",
+        alt: "Bison Property Management - Client Focused, Results Driven",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Company Name | Professional Contracting Services",
-    description: "Professional contracting services. Free estimates available.",
+    title: "Bison Property Management | Property Management & Landscaping Services",
+    description: "Professional lawn care, landscaping, snow removal, and rental services. Free quotes available.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -72,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://yourcompany.com" />
+        <link rel="canonical" href="https://bisonpropertymanagement.ca" />
       </head>
       <body className="antialiased">
         <Header />
