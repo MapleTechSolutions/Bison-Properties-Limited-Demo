@@ -3,29 +3,29 @@ import Services from "@/components/Services";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Our Services - Professional Contracting Solutions",
-  description: "Professional contracting services: residential projects, commercial work, renovations, repairs & maintenance. Licensed & insured. Free estimates available.",
-  keywords: ["contracting services", "residential contractor", "commercial contractor", "renovation", "repairs", "maintenance"],
+  title: "Our Services | Bison Property Management",
+  description: "Professional property services: lawn care starting at $1/cut, landscaping, snow removal from $15, and rental management. Serving Lyn, Ontario and Brockville area.",
+  keywords: ["lawn care services", "landscaping Brockville", "snow removal Ontario", "rental property management", "Lyn Ontario"],
 };
 
 export default function ServicesPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-[#094026] via-[#0a5530] to-[#063d22] relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-[#110a0c] via-[#1a1315] to-[#110a0c] relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FCB215]/20 rounded-full blur-[150px]" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#f04d22]/20 rounded-full blur-[150px]" />
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 text-[#FCB215] px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 bg-white/10 text-[#f04d22] px-4 py-2 rounded-full text-sm font-semibold mb-6">
               What We Do
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6">
-              Professional
-              <span className="text-[#FCB215]"> Services</span>
+              Our
+              <span className="text-[#f04d22]"> Services</span>
             </h1>
             <p className="text-xl text-white/70 leading-relaxed">
-              From residential projects to commercial work, we deliver quality workmanship backed by our satisfaction guarantee.
+              From lawn care to snow removal, we deliver quality workmanship backed by our satisfaction guarantee. Client focused, results driven.
             </p>
           </div>
         </div>
