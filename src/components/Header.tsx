@@ -52,28 +52,44 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 md:gap-3 group z-50">
-              <div className={`relative w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${
-                isScrolled || isMobileMenuOpen
-                  ? "bg-[#110a0c]"
-                  : "bg-[#f04d22]"
-              }`}>
-                {/* Bison Icon */}
-                <svg
-                  className={`w-6 h-6 md:w-7 md:h-7 transition-colors duration-300 ${isScrolled || isMobileMenuOpen ? "text-[#f04d22]" : "text-white"}`}
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2C8 2 5 4 4 7c-1 3 0 5 1 6l1 1v5c0 1 1 2 2 2h1v-3h6v3h1c1 0 2-1 2-2v-5l1-1c1-1 2-3 1-6-1-3-4-5-8-5zm-4 7c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm8 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm-6 4h4c0 1.1-.9 2-2 2s-2-.9-2-2z"/>
-                </svg>
-              </div>
+              {/* Bison Silhouette */}
+              <svg
+                className="w-12 h-10 md:w-16 md:h-12 transition-all duration-300"
+                viewBox="0 0 80 50"
+                fill="none"
+              >
+                {/* Bison body - charging position facing right */}
+                <path
+                  d="M68 28c2-1 4-3 4-6 0-2-1-4-3-5l-2-1c0-2-1-4-3-5-1-1-3-2-5-2h-3c-1-2-3-4-6-5-2-1-5-1-7 0l-3 2c-3-1-6-1-9 0-2 1-4 2-5 4l-2-1c-3-1-6 0-8 2-2 1-3 3-3 5l-1 3c-2 1-4 3-5 5-1 3-1 5 1 7l2 2v4c0 2 1 3 2 3h3l1-5h2l1 5h3c1 0 2-1 2-3v-2h8v2c0 2 1 3 2 3h3l1-5h2l1 5h3c1 0 2-1 2-3v-4l4-2c2-1 3-3 3-5l1-2z"
+                  className={`transition-colors duration-300 ${isScrolled || isMobileMenuOpen ? "fill-[#110a0c]" : "fill-[#110a0c]"}`}
+                  stroke="#f04d22"
+                  strokeWidth="2"
+                />
+                {/* Horn */}
+                <path
+                  d="M62 14c1-2 3-3 5-3 1 0 3 1 3 2 0 2-1 3-3 4l-3 1-2-4z"
+                  className={`transition-colors duration-300 ${isScrolled || isMobileMenuOpen ? "fill-[#110a0c]" : "fill-[#110a0c]"}`}
+                  stroke="#f04d22"
+                  strokeWidth="1.5"
+                />
+                {/* Eye */}
+                <circle cx="58" cy="18" r="1.5" fill="#f04d22" />
+              </svg>
               <div className="flex flex-col">
-                <span className={`text-sm md:text-base font-bold tracking-tight transition-colors duration-300 leading-tight ${
+                <span className={`text-base md:text-xl font-black tracking-tight transition-colors duration-300 leading-none ${
+                  isScrolled || isMobileMenuOpen ? "text-[#f04d22]" : "text-[#f04d22]"
+                }`}>
+                  BISON
+                </span>
+                <span className={`text-[8px] md:text-[10px] font-semibold tracking-wider uppercase transition-colors duration-300 leading-tight ${
                   isScrolled || isMobileMenuOpen ? "text-[#110a0c]" : "text-white"
                 }`}>
-                  BISON PROPERTY
+                  PROPERTY
                 </span>
-                <span className={`text-[8px] md:text-[10px] font-semibold tracking-widest uppercase transition-colors duration-300 text-[#f04d22]`}>
-                  Client Focused, Results Driven
+                <span className={`text-[8px] md:text-[10px] font-semibold tracking-wider uppercase transition-colors duration-300 leading-tight ${
+                  isScrolled || isMobileMenuOpen ? "text-[#110a0c]" : "text-white"
+                }`}>
+                  MANAGEMENT
                 </span>
               </div>
             </Link>
