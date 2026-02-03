@@ -21,15 +21,6 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 text-[#f04d22] px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm font-semibold mb-6 md:mb-8">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#f04d22] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#f04d22]"></span>
-              </span>
-              Serving Lyn &amp; Brockville Area
-            </div>
-
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.1] tracking-tight mb-5 md:mb-6">
               Client Focused
               <br />
