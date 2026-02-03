@@ -5,35 +5,35 @@ import { useState, useEffect, useCallback } from "react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah & Mike T.",
-    location: "Residential Client",
+    name: "Sarah & Mike Thompson",
+    location: "Harbour Landing",
     rating: 5,
-    text: "Bison has been maintaining our lawn for two seasons now. Always on time, great communication, and our property has never looked better. Highly recommend their services!",
-    service: "Lawn Care",
+    text: "The team at Bison made building our first home an amazing experience. They guided us through every step, and now we're living in our dream home. The quality is outstanding!",
+    service: "New Home",
   },
   {
     id: 2,
     name: "James Wilson",
-    location: "Homeowner",
+    location: "The Greens",
     rating: 5,
-    text: "The landscaping team did an amazing job transforming our backyard. Professional from start to finish, and the attention to detail was impressive. Worth every penny.",
-    service: "Landscaping",
+    text: "From our first showhome visit to move-in day, Bison exceeded all our expectations. The attention to detail and craftsmanship in our home is incredible. Highly recommend!",
+    service: "Custom Build",
   },
   {
     id: 3,
-    name: "Thompson Restaurant",
-    location: "Business Owner",
+    name: "Patricia Chen",
+    location: "Westerra",
     rating: 5,
-    text: "Their snow removal service is reliable and fast. Even during the worst storms, our parking lot was always cleared and salted before we opened. Peace of mind all winter long.",
-    service: "Snow Removal",
+    text: "We looked at many builders before choosing Bison. Their designer interiors made our home feel move-in ready, and the community amenities are exactly what our family needed.",
+    service: "New Home",
   },
   {
     id: 4,
-    name: "Patricia Chen",
-    location: "Property Owner",
+    name: "David & Jennifer Roberts",
+    location: "Harbour Landing",
     rating: 5,
-    text: "Managing my rental property was stressful until I found Bison. They handle everything from tenant screening to maintenance requests. Truly a hands-off experience for me now.",
-    service: "Rentals",
+    text: "After living in our Bison home for two years, we're still impressed by the quality. Everything from the foundation to the finishing details was done right. Best decision we ever made.",
+    service: "New Home",
   },
 ];
 
@@ -60,32 +60,32 @@ export default function Testimonials() {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#f04d22]/10 text-[#110a0c] px-4 py-2 rounded-full text-sm font-semibold mb-4 md:mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#0d9488]/10 text-[#0d9488] px-4 py-2 rounded-full text-sm font-semibold mb-4 md:mb-6">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
             </svg>
             Reviews
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#110a0c] mb-4 md:mb-5">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#000000] mb-4 md:mb-5">
             What Our
-            <span className="text-[#f04d22]"> Clients Say</span>
+            <span className="text-[#0d9488]"> Homeowners Say</span>
           </h2>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-            Don&apos;t just take our word for it. Here&apos;s what our satisfied customers have to say.
+          <p className="text-base md:text-lg text-[#4a4a4a] max-w-2xl mx-auto">
+            Don&apos;t just take our word for it. Here&apos;s what our happy homeowners have to say.
           </p>
         </div>
 
         {/* Testimonials Slider */}
         <div className="max-w-4xl mx-auto">
           <div
-            className="relative bg-[#f8f9fa] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-12 border border-gray-100 shadow-xl shadow-gray-200/50"
+            className="relative bg-[#f5f5f5] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-12 border border-gray-100 shadow-xl shadow-gray-200/50"
             onTouchStart={() => setIsPaused(true)}
             onTouchEnd={() => setIsPaused(false)}
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
             {/* Quote decoration */}
-            <div className="absolute -top-4 md:-top-6 left-6 md:left-8 w-10 h-10 md:w-12 md:h-12 bg-[#f04d22] rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg shadow-[#f04d22]/25">
+            <div className="absolute -top-4 md:-top-6 left-6 md:left-8 w-10 h-10 md:w-12 md:h-12 bg-[#0d9488] rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg shadow-[#0d9488]/25">
               <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
               </svg>
@@ -96,7 +96,7 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1 mb-4 md:mb-6">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 md:w-6 md:h-6 text-[#f04d22]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-5 h-5 md:w-6 md:h-6 text-[#0d9488]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
@@ -121,13 +121,13 @@ export default function Testimonials() {
               {/* Author info */}
               <div className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-3 md:gap-4">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#110a0c] flex items-center justify-center">
-                    <svg className="w-6 h-6 md:w-7 md:h-7 text-[#f04d22]" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#000000] flex items-center justify-center">
+                    <svg className="w-6 h-6 md:w-7 md:h-7 text-[#0d9488]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <div>
-                    <div className="font-semibold text-[#110a0c] text-base md:text-lg">
+                    <div className="font-semibold text-[#000000] text-base md:text-lg">
                       {testimonials[activeIndex].name}
                     </div>
                     <div className="text-gray-500 text-sm md:text-base">
@@ -135,7 +135,7 @@ export default function Testimonials() {
                     </div>
                   </div>
                 </div>
-                <div className="px-3 py-1.5 md:px-4 md:py-2 bg-[#110a0c] text-[#f04d22] rounded-full text-xs md:text-sm font-semibold">
+                <div className="px-3 py-1.5 md:px-4 md:py-2 bg-[#000000] text-[#0d9488] rounded-full text-xs md:text-sm font-semibold">
                   {testimonials[activeIndex].service}
                 </div>
               </div>
@@ -148,7 +148,7 @@ export default function Testimonials() {
                 className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm active:bg-gray-100 touch-manipulation"
                 aria-label="Previous testimonial"
               >
-                <svg className="w-5 h-5 text-[#110a0c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-[#000000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
@@ -159,7 +159,7 @@ export default function Testimonials() {
                     onClick={() => setActiveIndex(index)}
                     className={`transition-all duration-300 rounded-full touch-manipulation ${
                       index === activeIndex
-                        ? "w-8 h-3 bg-[#f04d22]"
+                        ? "w-8 h-3 bg-[#0d9488]"
                         : "w-3 h-3 bg-gray-300"
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
@@ -171,7 +171,7 @@ export default function Testimonials() {
                 className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm active:bg-gray-100 touch-manipulation"
                 aria-label="Next testimonial"
               >
-                <svg className="w-5 h-5 text-[#110a0c]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-[#000000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -185,7 +185,7 @@ export default function Testimonials() {
                   onClick={() => setActiveIndex(index)}
                   className={`transition-all duration-300 rounded-full ${
                     index === activeIndex
-                      ? "w-8 h-3 bg-[#f04d22]"
+                      ? "w-8 h-3 bg-[#0d9488]"
                       : "w-3 h-3 bg-gray-300 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
@@ -197,19 +197,19 @@ export default function Testimonials() {
 
         {/* Reviews Badge */}
         <div className="mt-8 md:mt-12 flex justify-center">
-          <div className="inline-flex items-center gap-3 md:gap-4 bg-[#f8f9fa] border border-gray-200 px-4 md:px-6 py-3 md:py-4 rounded-xl md:rounded-2xl">
+          <div className="inline-flex items-center gap-3 md:gap-4 bg-[#f5f5f5] border border-gray-200 px-4 md:px-6 py-3 md:py-4 rounded-xl md:rounded-2xl">
             <div className="flex items-center gap-2">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 md:w-5 md:h-5 text-[#f04d22]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-4 h-4 md:w-5 md:h-5 text-[#0d9488]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
-              <span className="font-bold text-[#110a0c] text-base md:text-lg">5.0</span>
+              <span className="font-bold text-[#000000] text-base md:text-lg">5.0</span>
             </div>
             <div className="h-5 md:h-6 w-px bg-gray-300" />
-            <span className="text-gray-600 text-sm md:text-base">Based on <span className="font-semibold text-[#110a0c]">100+</span> reviews</span>
+            <span className="text-gray-600 text-sm md:text-base">Based on <span className="font-semibold text-[#000000]">100+</span> happy homeowners</span>
           </div>
         </div>
       </div>

@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
 import Testimonials from "@/components/Testimonials";
-import CTASection from "@/components/CTASection";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews | Bison Property Management",
-  description: "Read what our satisfied customers have to say about Bison Property Management. 5-star rated lawn care, landscaping, snow removal and property management.",
-  keywords: ["Bison Property Management reviews", "lawn care reviews", "property management testimonials"],
+  title: "Customer Reviews | Bison Properties Limited",
+  description: "Read what happy homeowners have to say about Bison Properties Limited. Discover why families choose us for their new home in Regina.",
+  keywords: ["Bison Properties reviews", "home builder testimonials", "Regina homeowner reviews"],
 };
 
 export default function ReviewsPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-[#110a0c] via-[#1a1315] to-[#110a0c] relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-black relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#f04d22]/20 rounded-full blur-[150px]" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#0d9488]/20 rounded-full blur-[150px]" />
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 text-[#f04d22] px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 bg-white/10 text-[#0d9488] px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -29,17 +29,45 @@ export default function ReviewsPage() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6">
               Customer
-              <span className="text-[#f04d22]"> Reviews</span>
+              <span className="text-[#0d9488]"> Reviews</span>
             </h1>
             <p className="text-xl text-white/70 leading-relaxed">
-              Don&apos;t just take our word for it. See what our satisfied customers have to say about working with Bison Property Management.
+              Don&apos;t just take our word for it. See what happy homeowners have to say about their Bison Properties experience.
             </p>
           </div>
         </div>
       </section>
 
       <Testimonials />
-      <CTASection />
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-[#0d9488]">
+        <div className="container-custom text-center">
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+            Ready to Join Our Happy Homeowners?
+          </h2>
+          <p className="text-white/80 mb-8 max-w-xl mx-auto">
+            Start your journey to homeownership today. Browse our available homes or contact our team.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/listings"
+              className="inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-900 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300"
+            >
+              Browse Homes
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 border-2 border-white/30"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

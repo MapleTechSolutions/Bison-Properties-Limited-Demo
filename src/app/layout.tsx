@@ -9,21 +9,21 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#110a0c",
+  themeColor: "#0d9488",
   colorScheme: "light",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bisonpropertymanagement.ca"),
+  metadataBase: new URL("https://bisonproperties.ca"),
   title: {
-    default: "Bison Property Management | Property Management & Landscaping Services",
-    template: "%s | Bison Property Management",
+    default: "Bison Properties Limited | New Homes & Communities in Regina",
+    template: "%s | Bison Properties Limited",
   },
-  description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services. Call 343-700-0770 for a free quote.",
-  keywords: ["property management", "lawn care", "landscaping", "snow removal", "rental services", "lawn mowing", "tree trimming", "plowing"],
-  authors: [{ name: "Bison Property Management" }],
-  creator: "Bison Property Management",
-  publisher: "Bison Property Management",
+  description: "Bold Builds Further. Discover new homes and vibrant communities in Regina. Award-winning builder offering quality craftsmanship and designer interiors.",
+  keywords: ["new homes", "property development", "communities", "Regina homes", "home builder", "Saskatchewan real estate", "Harbour Landing", "new construction"],
+  authors: [{ name: "Bison Properties Limited" }],
+  creator: "Bison Properties Limited",
+  publisher: "Bison Properties Limited",
   formatDetection: {
     email: false,
     address: false,
@@ -32,23 +32,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://bisonpropertymanagement.ca",
-    siteName: "Bison Property Management",
-    title: "Bison Property Management | Property Management & Landscaping Services",
-    description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services. Free quotes available.",
+    url: "https://bisonproperties.ca",
+    siteName: "Bison Properties Limited",
+    title: "Bison Properties Limited | New Homes & Communities in Regina",
+    description: "Bold Builds Further. Discover new homes and vibrant communities in Regina. Award-winning builder offering quality craftsmanship.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Bison Property Management - Client Focused, Results Driven",
+        alt: "Bison Properties Limited - Bold Builds Further",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bison Property Management | Property Management & Landscaping Services",
-    description: "Professional lawn care, landscaping, snow removal, and rental services. Free quotes available.",
+    title: "Bison Properties Limited | New Homes & Communities",
+    description: "Bold Builds Further. Discover new homes and vibrant communities in Regina.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -72,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://bisonpropertymanagement.ca" />
+        <link rel="canonical" href="https://bisonproperties.ca" />
       </head>
       <body className="antialiased">
         <Header />

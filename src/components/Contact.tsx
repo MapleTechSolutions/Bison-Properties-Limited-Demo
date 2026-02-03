@@ -4,10 +4,12 @@ import { useState } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
-    service: "",
+    interest: "",
+    community: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -23,68 +25,68 @@ export default function Contact() {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     setIsSubmitted(true);
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", interest: "", community: "", message: "" });
   };
 
   return (
-    <section id="contact-form" className="section-padding bg-[#f8f9fa]">
+    <section id="contact-form" className="section-padding bg-[#f5f5f5]">
       <div className="container-custom">
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-16">
           {/* Left - Info */}
           <div className="lg:col-span-2">
-            <div className="inline-flex items-center gap-2 bg-[#f04d22]/10 text-[#110a0c] px-4 py-2 rounded-full text-sm font-semibold mb-4 md:mb-6">
+            <div className="inline-flex items-center gap-2 bg-[#0d9488]/10 text-[#0d9488] px-4 py-2 rounded-full text-sm font-semibold mb-4 md:mb-6">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
               Contact Us
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#110a0c] mb-5 md:mb-6 leading-tight">
-              Let&apos;s Discuss Your
-              <span className="text-[#f04d22]"> Property</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#000000] mb-5 md:mb-6 leading-tight">
+              Let&apos;s Find Your
+              <span className="text-[#0d9488]"> Dream Home</span>
             </h2>
 
-            <p className="text-base md:text-lg text-gray-600 mb-8 md:mb-10">
-              Ready to get started? Contact us for a free, no-obligation quote. We&apos;ll get back to you within 24 hours.
+            <p className="text-base md:text-lg text-[#4a4a4a] mb-8 md:mb-10">
+              Ready to start your home search? Contact our team and we&apos;ll help you find the perfect new home in one of our communities.
             </p>
 
             {/* Contact info cards */}
             <div className="space-y-3 md:space-y-4">
-              <a href="tel:3437000770" className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-white rounded-xl md:rounded-2xl border border-gray-100 shadow-sm active:bg-gray-50 transition-all group touch-manipulation">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[#f04d22] flex items-center justify-center shadow-lg shadow-[#f04d22]/25 group-active:scale-95 transition-transform">
+              <a href="tel:3061231234" className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-white rounded-xl md:rounded-2xl border border-gray-100 shadow-sm active:bg-gray-50 transition-all group touch-manipulation">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[#0d9488] flex items-center justify-center shadow-lg shadow-[#0d9488]/25 group-active:scale-95 transition-transform">
                   <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div>
                   <div className="text-xs md:text-sm text-gray-500 mb-0.5 md:mb-1">Call us anytime</div>
-                  <div className="text-lg md:text-xl font-bold text-[#110a0c]">343-700-0770</div>
+                  <div className="text-lg md:text-xl font-bold text-[#000000]">(306) 123-1234</div>
                 </div>
               </a>
 
-              <a href="mailto:Sales@BisonPropertyManagement.ca" className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-white rounded-xl md:rounded-2xl border border-gray-100 shadow-sm active:bg-gray-50 transition-all group touch-manipulation">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[#110a0c] flex items-center justify-center shadow-lg group-active:scale-95 transition-transform">
-                  <svg className="w-5 h-5 md:w-6 md:h-6 text-[#f04d22]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <a href="mailto:info@bisonproperties.ca" className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-white rounded-xl md:rounded-2xl border border-gray-100 shadow-sm active:bg-gray-50 transition-all group touch-manipulation">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[#000000] flex items-center justify-center shadow-lg group-active:scale-95 transition-transform">
+                  <svg className="w-5 h-5 md:w-6 md:h-6 text-[#0d9488]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
                   <div className="text-xs md:text-sm text-gray-500 mb-0.5 md:mb-1">Email us</div>
-                  <div className="text-sm md:text-base font-semibold text-[#110a0c] break-all">Sales@BisonPropertyManagement.ca</div>
+                  <div className="text-sm md:text-base font-semibold text-[#000000]">info@bisonproperties.ca</div>
                 </div>
               </a>
 
               <div className="flex items-center gap-3 md:gap-4 p-4 md:p-5 bg-white rounded-xl md:rounded-2xl border border-gray-100 shadow-sm">
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[#110a0c] flex items-center justify-center shadow-lg">
-                  <svg className="w-5 h-5 md:w-6 md:h-6 text-[#f04d22]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-[#000000] flex items-center justify-center shadow-lg">
+                  <svg className="w-5 h-5 md:w-6 md:h-6 text-[#0d9488]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div>
-                  <div className="text-xs md:text-sm text-gray-500 mb-0.5 md:mb-1">Service area</div>
-                  <div className="text-[#110a0c] font-medium text-sm md:text-base">Professional Property Services</div>
-                  <div className="text-[#f04d22] font-bold text-xs md:text-sm">Free Quotes Available</div>
+                  <div className="text-xs md:text-sm text-gray-500 mb-0.5 md:mb-1">Visit our showhome</div>
+                  <div className="text-[#000000] font-medium text-sm md:text-base">123 Sample Street, Regina</div>
+                  <div className="text-[#0d9488] font-bold text-xs md:text-sm">Open Weekends 12-5pm</div>
                 </div>
               </div>
             </div>
@@ -95,40 +97,69 @@ export default function Contact() {
             <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100 p-6 md:p-8 lg:p-10">
               {isSubmitted ? (
                 <div className="text-center py-8 md:py-12">
-                  <div className="w-16 h-16 md:w-20 md:h-20 bg-[#110a0c] rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 shadow-lg shadow-[#110a0c]/25">
-                    <svg className="w-8 h-8 md:w-10 md:h-10 text-[#f04d22]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-[#0d9488] rounded-full flex items-center justify-center mx-auto mb-5 md:mb-6 shadow-lg shadow-[#0d9488]/25">
+                    <svg className="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-[#110a0c] mb-2 md:mb-3">Thank You!</h3>
-                  <p className="text-gray-600 mb-5 md:mb-6 text-sm md:text-base">We&apos;ve received your request and will contact you within 24 hours.</p>
-                  <button onClick={() => setIsSubmitted(false)} className="text-[#f04d22] font-semibold active:text-[#d63d15] transition-colors touch-manipulation">
-                    Submit another request
+                  <h3 className="text-xl md:text-2xl font-bold text-[#000000] mb-2 md:mb-3">Thank You!</h3>
+                  <p className="text-[#4a4a4a] mb-5 md:mb-6 text-sm md:text-base">We&apos;ve received your inquiry and will contact you shortly.</p>
+                  <button onClick={() => setIsSubmitted(false)} className="text-[#0d9488] font-semibold active:text-[#0f766e] transition-colors touch-manipulation">
+                    Submit another inquiry
                   </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                   <div className="text-center mb-6 md:mb-8">
-                    <h3 className="text-xl md:text-2xl font-bold text-[#110a0c] mb-2">Request Your Free Quote</h3>
-                    <p className="text-gray-600 text-sm md:text-base">Fill out the form below and we&apos;ll get back to you shortly.</p>
+                    <h3 className="text-xl md:text-2xl font-bold text-[#000000] mb-2">Get in Touch</h3>
+                    <p className="text-[#4a4a4a] text-sm md:text-base">Tell us about what you&apos;re looking for in your new home.</p>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-[#110a0c] mb-2">Full Name *</label>
+                      <label htmlFor="firstName" className="block text-sm font-semibold text-[#000000] mb-2">First Name *</label>
                       <input
                         type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
+                        id="firstName"
+                        name="firstName"
+                        value={formData.firstName}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3.5 bg-[#f8f9fa] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#f04d22]/20 focus:border-[#f04d22] outline-none transition-all text-base"
-                        placeholder="John Smith"
+                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        placeholder="John"
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-[#110a0c] mb-2">Phone Number *</label>
+                      <label htmlFor="lastName" className="block text-sm font-semibold text-[#000000] mb-2">Last Name *</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        placeholder="Smith"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-semibold text-[#000000] mb-2">Email Address *</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        placeholder="john@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-semibold text-[#000000] mb-2">Phone Number *</label>
                       <input
                         type="tel"
                         id="phone"
@@ -136,55 +167,57 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3.5 bg-[#f8f9fa] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#f04d22]/20 focus:border-[#f04d22] outline-none transition-all text-base"
-                        placeholder="(343) 700-0770"
+                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        placeholder="(306) 123-4567"
                       />
                     </div>
                   </div>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-[#110a0c] mb-2">Email Address *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3.5 bg-[#f8f9fa] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#f04d22]/20 focus:border-[#f04d22] outline-none transition-all text-base"
-                      placeholder="john@example.com"
-                    />
+                  <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
+                    <div>
+                      <label htmlFor="interest" className="block text-sm font-semibold text-[#000000] mb-2">I would like to *</label>
+                      <select
+                        id="interest"
+                        name="interest"
+                        value={formData.interest}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all appearance-none cursor-pointer text-base"
+                      >
+                        <option value="">Select an option...</option>
+                        <option value="book-tour">Book a Showhome Tour</option>
+                        <option value="get-pricing">Get Pricing Information</option>
+                        <option value="talk-agent">Talk to a Sales Agent</option>
+                        <option value="general">General Inquiry</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label htmlFor="community" className="block text-sm font-semibold text-[#000000] mb-2">I am interested in</label>
+                      <select
+                        id="community"
+                        name="community"
+                        value={formData.community}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all appearance-none cursor-pointer text-base"
+                      >
+                        <option value="">Any community...</option>
+                        <option value="harbour-landing">Harbour Landing</option>
+                        <option value="the-greens">The Greens</option>
+                        <option value="westerra">Westerra</option>
+                      </select>
+                    </div>
                   </div>
 
                   <div>
-                    <label htmlFor="service" className="block text-sm font-semibold text-[#110a0c] mb-2">Service Needed *</label>
-                    <select
-                      id="service"
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3.5 bg-[#f8f9fa] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#f04d22]/20 focus:border-[#f04d22] outline-none transition-all appearance-none cursor-pointer text-base"
-                    >
-                      <option value="">Select a service...</option>
-                      <option value="lawn-care">Lawn Care</option>
-                      <option value="landscaping">Landscaping</option>
-                      <option value="snow-removal">Snow Removal</option>
-                      <option value="rental-services">Rental Services</option>
-                      <option value="consultation">Free Consultation</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-[#110a0c] mb-2">Property Details <span className="text-gray-400 font-normal">(optional)</span></label>
+                    <label htmlFor="message" className="block text-sm font-semibold text-[#000000] mb-2">Message <span className="text-gray-400 font-normal">(optional)</span></label>
                     <textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-3.5 bg-[#f8f9fa] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#f04d22]/20 focus:border-[#f04d22] outline-none transition-all resize-none text-base"
-                      placeholder="Tell us about your property..."
+                      className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all resize-none text-base"
+                      placeholder="Tell us about what you're looking for..."
                     />
                   </div>
 
@@ -203,7 +236,7 @@ export default function Contact() {
                       </span>
                     ) : (
                       <>
-                        Get My Free Quote
+                        Send Message
                         <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>

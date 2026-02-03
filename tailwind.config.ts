@@ -10,24 +10,24 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: '#fff7f5',
-          100: '#ffece8',
-          200: '#ffd5cc',
-          300: '#ffb3a3',
-          400: '#f07550',
-          500: '#f04d22',
-          600: '#d63d15',
-          700: '#b32f0f',
-          800: '#8f2610',
-          900: '#6b1c0c',
+          50: '#f0fdfc',
+          100: '#ccfbf7',
+          200: '#99f6ed',
+          300: '#5ee9db',
+          400: '#2dd4c2',
+          500: '#0d9488',
+          600: '#0f766e',
+          700: '#115e59',
+          800: '#134e4a',
+          900: '#042f2e',
         },
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        sans: ['Montserrat', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'glow': '0 0 40px -10px rgba(240, 77, 34, 0.5)',
-        'glow-lg': '0 0 60px -15px rgba(240, 77, 34, 0.6)',
+        'glow': '0 0 40px -10px rgba(13, 148, 136, 0.5)',
+        'glow-lg': '0 0 60px -15px rgba(13, 148, 136, 0.6)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
