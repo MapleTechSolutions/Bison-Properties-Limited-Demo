@@ -42,7 +42,7 @@ export default function Footer() {
                 </div>
               </Link>
               <p className="text-gray-400 mb-5 md:mb-6 leading-relaxed text-sm md:text-base">
-                Your trusted property management and landscaping team in Lyn, Ontario. We treat every property as if it were our own.
+                Your trusted property management and landscaping team. We treat every property as if it were our own.
               </p>
               <div className="flex gap-2 md:gap-3">
                 {["facebook", "instagram", "linkedin"].map((social) => (
@@ -146,8 +146,8 @@ export default function Footer() {
                     </svg>
                   </div>
                   <div className="text-sm md:text-base">
-                    <div>Lyn, Ontario</div>
-                    <div className="text-gray-500">Near Brockville</div>
+                    <div>Service Area</div>
+                    <div className="text-gray-500">Contact for details</div>
                     <div className="text-[#f04d22] font-bold">Free Quotes</div>
                   </div>
                 </li>

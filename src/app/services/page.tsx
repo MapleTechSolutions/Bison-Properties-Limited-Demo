@@ -4,8 +4,8 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "Our Services | Bison Property Management",
-  description: "Professional property services: lawn care starting at $1/cut, landscaping, snow removal from $15, and rental management. Serving Lyn, Ontario and Brockville area.",
-  keywords: ["lawn care services", "landscaping Brockville", "snow removal Ontario", "rental property management", "Lyn Ontario"],
+  description: "Professional property services: lawn care, landscaping, snow removal, and rental management. Client focused, results driven.",
+  keywords: ["lawn care services", "landscaping", "snow removal", "rental property management"],
 };
 
 export default function ServicesPage() {

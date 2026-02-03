@@ -5,8 +5,8 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "About Us | Bison Property Management",
-  description: "Client Focused, Results Driven. Bison Property Management provides professional lawn care, landscaping, snow removal and rental services in Lyn, Ontario near Brockville.",
-  keywords: ["about Bison Property Management", "Lyn Ontario property management", "local lawn care", "Brockville landscaping"],
+  description: "Client Focused, Results Driven. Bison Property Management provides professional lawn care, landscaping, snow removal and rental services.",
+  keywords: ["about Bison Property Management", "property management", "local lawn care", "landscaping"],
 };
 
 export default function AboutPage() {

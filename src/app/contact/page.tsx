@@ -3,8 +3,8 @@ import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: "Contact Us | Bison Property Management",
-  description: "Contact Bison Property Management for a free quote. Call 343-700-0770 or fill out our form. Professional lawn care, landscaping, snow removal and rental services in Lyn, Ontario.",
-  keywords: ["contact property management", "free quote", "Lyn Ontario", "Brockville property services"],
+  description: "Contact Bison Property Management for a free quote. Call 343-700-0770 or fill out our form. Professional lawn care, landscaping, snow removal and rental services.",
+  keywords: ["contact property management", "free quote", "lawn care", "landscaping"],
 };
 
 export default function ContactPage() {
@@ -41,8 +41,8 @@ export default function ContactPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <p className="text-[#110a0c] font-bold text-lg">Serving Lyn, Ontario & Surrounding Areas</p>
-              <p className="text-gray-500 text-sm">Near Brockville &bull; Free quotes available</p>
+              <p className="text-[#110a0c] font-bold text-lg">Service Area</p>
+              <p className="text-gray-500 text-sm">Free quotes available</p>
             </div>
           </div>
         </div>

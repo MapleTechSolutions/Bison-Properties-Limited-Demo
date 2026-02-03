@@ -4,8 +4,8 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "Customer Reviews | Bison Property Management",
-  description: "Read what our satisfied customers have to say about Bison Property Management. 5-star rated lawn care, landscaping, snow removal and property management in Lyn, Ontario.",
-  keywords: ["Bison Property Management reviews", "lawn care reviews", "Brockville property management testimonials"],
+  description: "Read what our satisfied customers have to say about Bison Property Management. 5-star rated lawn care, landscaping, snow removal and property management.",
+  keywords: ["Bison Property Management reviews", "lawn care reviews", "property management testimonials"],
 };
 
 export default function ReviewsPage() {

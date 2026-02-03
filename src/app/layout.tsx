@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     default: "Bison Property Management | Property Management & Landscaping Services",
     template: "%s | Bison Property Management",
   },
-  description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services in Lyn, Ontario near Brockville. Call 343-700-0770 for a free quote.",
-  keywords: ["property management", "lawn care", "landscaping", "snow removal", "rental services", "Lyn", "Brockville", "Ontario", "lawn mowing", "tree trimming", "plowing"],
+  description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services. Call 343-700-0770 for a free quote.",
+  keywords: ["property management", "lawn care", "landscaping", "snow removal", "rental services", "lawn mowing", "tree trimming", "plowing"],
   authors: [{ name: "Bison Property Management" }],
   creator: "Bison Property Management",
   publisher: "Bison Property Management",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://bisonpropertymanagement.ca",
     siteName: "Bison Property Management",
     title: "Bison Property Management | Property Management & Landscaping Services",
-    description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services in Lyn, Ontario. Free quotes available.",
+    description: "Client focused, results driven. Professional lawn care, landscaping, snow removal, and rental services. Free quotes available.",
     images: [
       {
         url: "/og-image.jpg",

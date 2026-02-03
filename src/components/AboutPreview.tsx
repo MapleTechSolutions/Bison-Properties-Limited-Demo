@@ -40,7 +40,7 @@ export default function AboutPreview() {
             </h2>
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              At Bison Property Management, we believe in treating every property as if it were our own. Based in Lyn, Ontario, we serve the Brockville area with professional lawn care, landscaping, snow removal, and rental services.
+              At Bison Property Management, we believe in treating every property as if it were our own. We provide professional lawn care, landscaping, snow removal, and rental services.
             </p>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">

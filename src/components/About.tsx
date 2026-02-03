@@ -20,8 +20,8 @@ export default function About() {
                         <path d="M12 2C8 2 5 4 4 7c-1 3 0 5 1 6l1 1v5c0 1 1 2 2 2h1v-3h6v3h1c1 0 2-1 2-2v-5l1-1c1-1 2-3 1-6-1-3-4-5-8-5zm-4 7c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm8 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm-6 4h4c0 1.1-.9 2-2 2s-2-.9-2-2z"/>
                       </svg>
                     </div>
-                    <p className="text-white text-base md:text-lg font-medium">Lyn, Ontario</p>
-                    <p className="text-white/60 text-sm md:text-base">Near Brockville</p>
+                    <p className="text-white text-base md:text-lg font-medium">Client Focused</p>
+                    <p className="text-white/60 text-sm md:text-base">Results Driven</p>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function About() {
             </h2>
 
             <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-6 leading-relaxed">
-              At Bison Property Management, we treat every property as if it were our own. Based in Lyn, Ontario near Brockville, we provide professional lawn care, landscaping, snow removal, and rental services to our community.
+              At Bison Property Management, we treat every property as if it were our own. We provide professional lawn care, landscaping, snow removal, and rental services to our community.
             </p>
 
             <p className="text-gray-600 mb-8 md:mb-10 leading-relaxed text-sm md:text-base">
@@ -79,7 +79,7 @@ export default function About() {
               {[
                 { icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", title: "Licensed & Registered", desc: "Fully licensed business" },
                 { icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z", title: "Fully Insured", desc: "Comprehensive coverage" },
-                { icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z", title: "Local Team", desc: "Serving Lyn & Brockville" },
+                { icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z", title: "Local Team", desc: "Dedicated professionals" },
                 { icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z", title: "Quality Service", desc: "Every property, every time" },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl border border-gray-100 shadow-sm">

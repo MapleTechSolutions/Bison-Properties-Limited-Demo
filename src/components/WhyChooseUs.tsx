@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
     {
       number: "05",
       title: "Local Team",
-      description: "Based in Lyn, Ontario. We know the area and serve our neighbors with pride.",
+      description: "A dedicated team that knows the community and serves our neighbors with pride.",
     },
     {
       number: "06",

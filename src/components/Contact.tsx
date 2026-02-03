@@ -83,7 +83,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs md:text-sm text-gray-500 mb-0.5 md:mb-1">Service area</div>
-                  <div className="text-[#110a0c] font-medium text-sm md:text-base">Lyn, Ontario &bull; Near Brockville</div>
+                  <div className="text-[#110a0c] font-medium text-sm md:text-base">Professional Property Services</div>
                   <div className="text-[#f04d22] font-bold text-xs md:text-sm">Free Quotes Available</div>
                 </div>
               </div>
