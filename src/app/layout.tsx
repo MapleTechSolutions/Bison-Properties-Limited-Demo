@@ -7,8 +7,10 @@ import MobileStickyCTA from "@/components/MobileStickyCTA";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
+  minimumScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
   themeColor: "#0d9488",
   colorScheme: "light",
 };
@@ -74,7 +76,7 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://bisonproperties.ca" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased overflow-x-hidden w-full">
         <Header />
         <main>{children}</main>
         <Footer />
