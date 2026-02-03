@@ -161,7 +161,7 @@ export default function PropertyListings() {
           {developments.map((dev) => (
             <div
               key={dev.id}
-              className="flex-shrink-0 w-[280px] sm:w-[320px] md:w-[340px] bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group snap-start"
+              className="flex-shrink-0 w-[300px] sm:w-[320px] md:w-[340px] bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl active:scale-[0.99] transition-all duration-200 group snap-center"
             >
               {/* Image Placeholder - Blueprint style */}
               <div className="relative h-52 bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden">
@@ -221,14 +221,19 @@ export default function PropertyListings() {
           ))}
         </div>
 
-        {/* Swipe hint on mobile */}
-        <p className="text-center text-xs text-gray-400 mt-4 sm:hidden">Swipe to see more →</p>
+        {/* Swipe hint on mobile - more visible */}
+        <div className="flex items-center justify-center gap-2 mt-4 sm:hidden text-gray-400">
+          <span className="text-sm">Swipe for more</span>
+          <svg className="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </div>
 
         {/* View All Button */}
-        <div className="text-center mt-6 sm:mt-10">
+        <div className="text-center mt-8 sm:mt-10">
           <Link
             href="/listings"
-            className="inline-flex items-center justify-center gap-2 bg-black hover:bg-gray-800 active:bg-gray-800 text-white font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition-all duration-300 w-full sm:w-auto touch-manipulation"
+            className="inline-flex items-center justify-center gap-3 bg-black hover:bg-gray-800 active:bg-gray-900 active:scale-[0.98] text-white font-bold px-6 sm:px-8 py-5 rounded-2xl transition-all duration-200 w-full sm:w-auto touch-manipulation"
           >
             View All Developments
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

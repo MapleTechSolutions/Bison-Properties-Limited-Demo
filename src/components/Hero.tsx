@@ -42,10 +42,10 @@ export default function Hero() {
           </p>
 
           {/* CTA Buttons - Stack on mobile */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="#communities"
-              className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-[#0d9488] hover:bg-[#0f766e] active:bg-[#0f766e] text-white font-bold px-6 sm:px-8 py-4 rounded-xl transition-all duration-300 text-base sm:text-lg shadow-lg hover:shadow-xl touch-manipulation"
+              className="inline-flex items-center justify-center gap-3 bg-[#0d9488] hover:bg-[#0f766e] active:bg-[#0f766e] active:scale-[0.98] text-white font-bold px-6 sm:px-8 py-5 rounded-2xl transition-all duration-200 text-base sm:text-lg shadow-lg shadow-[#0d9488]/30 hover:shadow-xl touch-manipulation"
             >
               Our Communities
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#contact"
-              className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-white/10 hover:bg-white/20 active:bg-white/20 text-white font-bold px-6 sm:px-8 py-4 rounded-xl transition-all duration-300 text-base sm:text-lg border border-white/30 touch-manipulation"
+              className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 active:bg-white/25 active:scale-[0.98] text-white font-bold px-6 sm:px-8 py-5 rounded-2xl transition-all duration-200 text-base sm:text-lg border border-white/30 backdrop-blur-sm touch-manipulation"
             >
               Start Your Journey
             </Link>

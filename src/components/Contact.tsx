@@ -115,7 +115,7 @@ export default function Contact() {
                     <p className="text-[#4a4a4a] text-sm md:text-base">Tell us about what you&apos;re looking for in your new home.</p>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
+                  <div className="grid md:grid-cols-2 gap-4 md:gap-5">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-semibold text-[#000000] mb-2">First Name *</label>
                       <input
@@ -125,7 +125,7 @@ export default function Contact() {
                         value={formData.firstName}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        className="w-full px-4 py-4 bg-[#f5f5f5] border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
                         placeholder="John"
                       />
                     </div>
@@ -138,13 +138,13 @@ export default function Contact() {
                         value={formData.lastName}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        className="w-full px-4 py-4 bg-[#f5f5f5] border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
                         placeholder="Smith"
                       />
                     </div>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
+                  <div className="grid md:grid-cols-2 gap-4 md:gap-5">
                     <div>
                       <label htmlFor="email" className="block text-sm font-semibold text-[#000000] mb-2">Email Address *</label>
                       <input
@@ -154,7 +154,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        className="w-full px-4 py-4 bg-[#f5f5f5] border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -167,13 +167,13 @@ export default function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
+                        className="w-full px-4 py-4 bg-[#f5f5f5] border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all text-base"
                         placeholder="(306) 123-4567"
                       />
                     </div>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4 md:gap-5">
+                  <div className="grid md:grid-cols-2 gap-4 md:gap-5">
                     <div>
                       <label htmlFor="interest" className="block text-sm font-semibold text-[#000000] mb-2">I would like to *</label>
                       <select
@@ -182,7 +182,7 @@ export default function Contact() {
                         value={formData.interest}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all appearance-none cursor-pointer text-base"
+                        className="w-full px-4 py-4 bg-[#f5f5f5] border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all appearance-none cursor-pointer text-base"
                       >
                         <option value="">Select an option...</option>
                         <option value="book-tour">Book a Showhome Tour</option>
@@ -198,7 +198,7 @@ export default function Contact() {
                         name="community"
                         value={formData.community}
                         onChange={handleChange}
-                        className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all appearance-none cursor-pointer text-base"
+                        className="w-full px-4 py-4 bg-[#f5f5f5] border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all appearance-none cursor-pointer text-base"
                       >
                         <option value="">Any community...</option>
                         <option value="harbour-landing">Harbour Landing</option>
@@ -216,7 +216,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={4}
-                      className="w-full px-4 py-3.5 bg-[#f5f5f5] border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all resize-none text-base"
+                      className="w-full px-4 py-4 bg-[#f5f5f5] border border-gray-200 rounded-2xl focus:ring-2 focus:ring-[#0d9488]/20 focus:border-[#0d9488] outline-none transition-all resize-none text-base"
                       placeholder="Tell us about what you're looking for..."
                     />
                   </div>
@@ -224,7 +224,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full btn-primary py-4 text-base md:text-lg disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full btn-primary py-5 text-base md:text-lg disabled:opacity-70 disabled:cursor-not-allowed rounded-2xl"
                   >
                     {isSubmitting ? (
                       <span className="flex items-center justify-center gap-2">
