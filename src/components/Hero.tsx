@@ -9,12 +9,13 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/regina-hero.webp"
-          alt="Wascana Lake sunset with Saskatchewan Legislative Building"
+          src="/regina-hero.jpg"
+          alt="Saskatchewan Legislative Building in Regina"
           fill
-          className="object-cover object-center"
+          className="object-cover object-[35%_center] sm:object-[40%_center] md:object-center"
           priority
-          sizes="100vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
+          quality={85}
         />
         {/* Dark overlay for text readability - stronger on mobile for better contrast */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 md:from-black/70 md:via-black/50 md:to-black/30" />
